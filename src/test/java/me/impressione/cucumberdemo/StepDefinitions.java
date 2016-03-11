@@ -22,19 +22,15 @@ public class StepDefinitions implements Pt {
             throw new PendingException();
         });
 
-        Quando("^após passar (\\d+)\\.(\\d+) milhões de anos$", (Integer arg1, Integer arg2) -> {
-            // Write code here that turns the phrase above into concrete actions
-            throw new PendingException();
-        });
-
         Então("^a resposta é \"([^\"]*)\"$", (String arg1) -> {
             // Write code here that turns the phrase above into concrete actions
             throw new PendingException();
         });
 
-        Quando("^após passar (\\d+) milhões de anos$", (Integer arg1) -> {
+        E("^após passar ([\\d\\.]+) milhões de anos$", (Double anosEmMilhoes) -> {
             // Write code here that turns the phrase above into concrete actions
             throw new PendingException();
         });
     }
 }
+
